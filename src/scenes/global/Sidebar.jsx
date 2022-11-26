@@ -7,6 +7,7 @@ import { tokens } from "../../theme";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
 import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
@@ -116,7 +117,13 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-         
+            <Item
+              title="Price Comparison"
+              to="/contacts"
+              icon={<CurrencyRupeeIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
             <Item
               title="Invoices Balances"
               to="/invoices"
